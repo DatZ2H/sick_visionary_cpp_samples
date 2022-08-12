@@ -1,0 +1,23 @@
+= sick_visionary_cpp_samples
+
+
+== SICK Visionary samples for C++
+
+=== Getting started
+
+Ensure you have a recent version of cmake footnote:[min required >= 3.8] and a compiler available on your machine's system.
+If you are working on windows with a recent version of VisualStudio footnote:[>= 2017] take care to have a supporting cmake version.
+
+After cloning this repository run these additional git commands to have the correct submodules in place:
+
+* `git submodule init`
+* `git submodule update`
+
+To build the samples it's suggested to proceed like this footnote:[also other ways are possible]:
+
+* `mkdir build` #create an empty build folder inside the clone repository
+* `cd build` #change cwd into empty build folger
+* optionally `cmake --help` #this lists available and *default* generator
+* `cmake ..` #to configure the build and generate the files - optionally specify -G <generator> if you wan't to use a non default generator
+
+Now you can build the files with the chosen buildsystem you've generated for. E.g. open the solution in VisualStudio or run make/ninja.
